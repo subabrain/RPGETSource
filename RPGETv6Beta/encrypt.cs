@@ -102,9 +102,6 @@ namespace RPGETv6Beta
             if(this.icon != "")
             {
 
-                Console.WriteLine(this.icon);
-                Console.WriteLine(this.place + "\\" + this.name);
-
                 System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
                 pProcess.StartInfo.FileName = @"ResourceHacker.exe";
                 pProcess.StartInfo.Arguments = "-open " + this.place + "\\" + this.name + ".exe -save " + this.place + "\\" + this.name + ".exe -action addskip -res " + this.icon + " -mask ICONGROUP,MAINICON,-log NUL "; //argument
